@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char c = 97;
+	int c = 97;
 	int i;
 
 	for (i = 0; i <= 26; i++)

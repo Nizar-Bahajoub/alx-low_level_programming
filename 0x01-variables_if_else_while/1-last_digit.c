@@ -11,6 +11,7 @@
 int main(void)
 {
 	int n, last;
+
 	n = rand() - RAND_MAX / 2;
 	last = n % 10;
 	if (last > 5)

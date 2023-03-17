@@ -1,6 +1,8 @@
 #include <stdio.h>
 /*
  * main - This is a description
+ * 
+ * Description: This is a large description
  * Return: 0
  */
 int main(void)

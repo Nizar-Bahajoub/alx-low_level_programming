@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - This is a description 
+ * main - This is a description
  *
  * Return:1
  */

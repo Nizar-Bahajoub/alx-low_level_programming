@@ -1,9 +1,5 @@
 	.file	"2-print_alphabet.c"
 	.text
-	.section	.rodata
-.LC0:
-	.string	"c"
-	.text
 	.globl	main
 	.type	main, @function
 main:
@@ -20,7 +16,7 @@ main:
 	movl	$0, -4(%rbp)
 	jmp	.L2
 .L3:
-	leaq	.LC0(%rip), %rax
+	movsbl	-5(%rbp), %eax
 	movl	%eax, %edi
 	call	putchar@PLT
 	movl	-4(%rbp), %eax

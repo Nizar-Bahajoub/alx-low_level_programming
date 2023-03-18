@@ -21,10 +21,11 @@ int main(void)
 					putchar(i);
 					putchar(k);
 					putchar(l);
-					if (l == (48 + 9) && k == (48 + 8) && i == (48 +7))
+					if (l == (48 + 9) && k == (48 + 8) && i == (48 + 7))
 						break;
+					putchar(',');
+					putchar(' ');
 				}
-				putchar(' ');
 			}
 		}
 	}

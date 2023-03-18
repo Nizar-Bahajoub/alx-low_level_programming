@@ -13,10 +13,13 @@ int main(void)
 	for (c = 0; c < 10; c++)
 	{
 		putchar(i);
+		i++;
 	}
-	for (c = 97; c < 7; c++)
+	c=97;
+	for (i = 0; i < 7; i++)
 	{
 		putchar(c);
+		c++;
 	}
 	putchar('\n');
 	return (0);

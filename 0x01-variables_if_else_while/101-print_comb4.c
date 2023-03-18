@@ -19,8 +19,8 @@ int main(void)
 				if (i != k && k != l && i != l)
 				{
 					putchar(i);
-					patchar(k);
-					putachr(l);
+					putchar(k);
+					putchar(l);
 					if (l == (48 + 9) && k == (48 + 8) && i == (48 +7))
 						break;
 				}

@@ -22,7 +22,7 @@ int main(void)
 				i = 48;
 				while (i < 58)
 				{
-					op1 = (h * 10) + l;
+					op1 = (m * 10) + l;
 					op2 = (k * 10) +i;
 					if (op1 < op2)
 					{

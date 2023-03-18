@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int i, k, c;
+	int i, k;
 
 	for (i = 0; i <= 9; i++)
 	{
@@ -20,7 +20,7 @@ int main(void)
 				putchar(k);
 			}
 		}
-		if (c == 9)
+		if (k == 9)
 			break;
 		putchar(',');
 		putchar(' ');

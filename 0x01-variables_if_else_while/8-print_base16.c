@@ -16,7 +16,7 @@ int main(void)
 		i++;
 	}
 	c=97;
-	for (i = 0; i < 7; i++)
+	for (i = 0; i < 6; i++)
 	{
 		putchar(c);
 		c++;

@@ -23,7 +23,7 @@ int main(void)
 				while (i < 58)
 				{
 					op1 = (m * 10) + l;
-					op2 = (k * 10) +i;
+					op2 = (k * 10) + i;
 					if (op1 < op2)
 					{
 						putchar(m);

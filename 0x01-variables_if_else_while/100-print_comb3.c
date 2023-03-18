@@ -10,9 +10,9 @@ int main(void)
 {
 	int i, k;
 
-	for (i = 48; i <= 48+9; i++)
+	for (i = 48; i <= 48 + 9; i++)
 	{
-		for (k = i; k <= i+9; k++)
+		for (k = i; k <= 48 + 9; k++)
 		{
 			if (i != k)
 			{
@@ -20,7 +20,8 @@ int main(void)
 				putchar(k);
 				if (k == 9)
 					break;
-				putchar(',');                                                                      putchar(' '); 
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}

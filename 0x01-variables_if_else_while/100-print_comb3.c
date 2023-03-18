@@ -18,7 +18,7 @@ int main(void)
 			{
 				putchar(i);
 				putchar(k);
-				if (k == (48 + 9)) && i == (48+8))
+				if (k == (48 + 9) && i == (48+8))
 					break;
 				putchar(',');
 				putchar(' ');

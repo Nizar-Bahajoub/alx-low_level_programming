@@ -2,6 +2,7 @@
 
 /**
  * _islower - cheks for lowercase character
+ * @c: the character to be checked
  *
  * written by nizar
  * Return: 1 if c is lower  otherwise

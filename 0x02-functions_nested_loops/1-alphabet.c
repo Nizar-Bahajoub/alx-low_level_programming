@@ -12,9 +12,9 @@ void print_alphabet(void)
 	int i;
 	char c = 97;
 
-	for(i = 0; i <= 25; i++)
+	for (i = 0; i <= 25; i++)
 	{
-		_putchar('c');
+		_putchar(c);
 		c += i;
 	}
 }

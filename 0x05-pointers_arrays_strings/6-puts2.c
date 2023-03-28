@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * puts_half - print half of a string
+ * puts2 - print half of a string
  * @str:string to print
  *
  * Return: void
  */
 
-void puts_half(char *str)
+void puts2(char *str)
 {
 	int i = 0;
 	int len = 0;

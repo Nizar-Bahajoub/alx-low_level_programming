@@ -4,6 +4,7 @@
  * _strncat - concatenates two strings
  * @dest: string  to change
  * @src: string source
+ * @n: number of character toadd to dest
  *
  * Return: pointer to dest
  */
@@ -16,7 +17,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		i++;
 	}
-	while (*(src + j) != '\0' && j < n )
+	while (*(src + j) != '\0' && j < n)
 	{
 		dest[i] = src[j];
 		i++;

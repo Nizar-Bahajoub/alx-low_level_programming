@@ -13,9 +13,9 @@ char *rot13(char *str)
 	char s1[] = "aAbBcCdDeEfFgGhHiIjJkKlLmM";
 	char s2[] = "nNoOpPqQrRsStTuUvVwWxXyYzZ";
 
-	for (i; str[i] != '\0'; i++)
+	for (; str[i] != '\0'; i++)
 	{
-		for (j; s1[j] != '\0'; j++)
+		for (; j < 26; j++)
 		{
 			if (str[i] == s1[j])
 			{

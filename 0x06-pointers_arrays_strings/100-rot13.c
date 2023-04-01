@@ -9,13 +9,13 @@
 
 char *rot13(char *str)
 {
-	int i = 0, j = 0;
+	int i, j;
 	char s1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char s2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (; j < 52; j++)
+		for (j = 0; j < 52; j++)
 		{
 			if (str[i] == s1[j])
 			{

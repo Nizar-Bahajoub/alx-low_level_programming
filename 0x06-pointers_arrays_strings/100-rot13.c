@@ -10,16 +10,17 @@
 char *rot13(char *str)
 {
 	int i = 0, j = 0;
-	char s1[] = "aAbBcCdDeEfFgGhHiIjJkKlLmM";
-	char s2[] = "nNoOpPqQrRsStTuUvVwWxXyYzZ";
+	char s1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char s2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (; str[i] != '\0'; i++)
 	{
-		for (; j < 26; j++)
+		for (; j < 52; j++)
 		{
 			if (str[i] == s1[j])
 			{
 				str[i] = s2[j];
+				break;
 			}
 		}
 	}

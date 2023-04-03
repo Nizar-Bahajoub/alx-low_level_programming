@@ -2,7 +2,7 @@
 
 /**
  * *_memset - fill the first n bytes of the area pointed to by s with b
- * @*s: erao to be modified
+ * @s: era of to be modified
  * @b: the constant to fill s with
  * @n: number of byte to be fill
  *
@@ -11,9 +11,9 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i = 0;
+	unsigned int i = 0;
 
-	for (i; i < n; i++)
+	for (; i < n; i++)
 	{
 		s[i] = b;
 	}

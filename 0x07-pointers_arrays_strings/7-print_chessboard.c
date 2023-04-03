@@ -3,7 +3,7 @@
 
 /**
  * print_chessboard - print shess board
- * @(*a)[8]: size
+ * @a: pointer pointer
  *
  * Return: nothing
  */

@@ -2,7 +2,7 @@
 
 /**
  * _strstr - locates a substring
- * @hystack: the string to find in
+ * @haystack: the string to find in
  * @needle: the substring
  *
  * Return: a pointer

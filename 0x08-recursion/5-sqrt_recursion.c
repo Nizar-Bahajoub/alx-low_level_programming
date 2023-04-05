@@ -15,7 +15,7 @@ int My_sqrt(int a, int b)
 	else if (b * b > a)
 		return (-1);
 	else
-		return My_sqrt(a, b +1);
+		return (My_sqrt(a, b + 1));
 }
 
 /**

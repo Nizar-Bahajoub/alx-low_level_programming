@@ -5,7 +5,7 @@
  * @x: the number tobe raised to y
  * @y: the power
  *
- * Rturn: x^y
+ * Return: x^y
  */
 
 int _pow_recursion(int x, int y)

@@ -21,6 +21,19 @@ int is_palindrome1(char *s, int i, int lent)
 }
 
 /**
+ * long_1 - long of s
+ * @s
+ *
+ * Return: int
+ */
+
+int long_1(char *s)
+{
+	if (*s != '\0')
+		return ((1 + long_1(s + 1)));
+}
+
+/**
  * is_palindrome - check if s is palindrome
  * @s: the string to be checked
  *
@@ -33,5 +46,5 @@ int is_palindrome(char *s)
 	{
 		return (0);
 	}
-	return (is_palindrome1(s, 0, _strlen_recursion(s)));
+	return (is_palindrome1(s, 0, long_1(s)));
 }

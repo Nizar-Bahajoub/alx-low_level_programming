@@ -11,7 +11,7 @@
 
 int is_palindrome1(char *s, int i, int lent)
 {
-		if (*(s + i) != *(s + lent -1))
+		if (*(s + i) != *(s + lent - 1))
 		{
 			return (0);
 		}
@@ -22,7 +22,7 @@ int is_palindrome1(char *s, int i, int lent)
 
 /**
  * long_1 - long of s
- * @s
+ * @s: the input string
  *
  * Return: int
  */

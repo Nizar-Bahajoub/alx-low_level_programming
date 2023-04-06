@@ -17,7 +17,7 @@ int prime(int a, int b)
 	}
 	if (b == (a + 1) / 2)
 		return (1);
-	return prime(a, b + 1);
+	return (prime(a, b + 1));
 
 }
 
@@ -31,5 +31,7 @@ int prime(int a, int b)
 
 int is_prime_number(int n)
 {
-	return prime(n, 2);
+	if (n <= 1)
+		return (0);
+	return (prime(n, 2));
 }

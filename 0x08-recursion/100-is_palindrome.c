@@ -3,21 +3,21 @@
 /**
  * is_palindrome1 - check if a string is palindrome
  * @s:the string to be chechek
- * @a: the inverse of s
+ * @lent: the lenght of s
+ * @i: iterator
  *
  * Return: 1 if yes 0 if not
  */
 
-int is_palindrome1(char *s, char *a)
+int is_palindrome1(char *s, int i, int lent)
 {
-	if (*a != '\0' && *s != '\n')
-	{
-		if (*a == *s)
+		if (*(s + i) != *(s + lent -1))
 		{
-			is_palindrome1(s + 1, a + 1);
-		}
-		else
 			return (0);
+		}
+		if (i >= len)
+			return (1);
+		return ((is_palindrome1(s, i + 1, len - 1));
 			
 }
 
@@ -30,5 +30,9 @@ int is_palindrome1(char *s, char *a)
 
 int is_palindrome(char *s)
 {
-	return (is_palindrome1(s, _print_rev_recursion(s)));
+	if (*s == 0)
+	{
+		return (0);
+	}
+	return (is_palindrome1(s, 0, _strlen_recursion(s)));
 }

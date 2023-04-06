@@ -15,9 +15,9 @@ int is_palindrome1(char *s, int i, int lent)
 		{
 			return (0);
 		}
-		if (i >= len)
+		if (i >= lent)
 			return (1);
-		return ((is_palindrome1(s, i + 1, len - 1));
+		return ((is_palindrome1(s, i + 1, len - 1)));
 			
 }
 

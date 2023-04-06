@@ -30,5 +30,5 @@ int is_palindrome1(char *s, char *a)
 
 int is_palindrome(char *s)
 {
-	is_palindrome1(s, _print_rev_recursion(s));
+	return (is_palindrome1(s, _print_rev_recursion(s)));
 }

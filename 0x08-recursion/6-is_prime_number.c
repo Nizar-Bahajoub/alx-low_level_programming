@@ -15,7 +15,7 @@ int prime(int a, int b)
 	{
 		return (0);
 	}
-	if (b == (n + 1) / 2)
+	if (b == (a + 1) / 2)
 		return (1);
 	return prime(a, b + 1);
 

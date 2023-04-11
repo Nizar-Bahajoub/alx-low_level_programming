@@ -5,7 +5,7 @@
  * main - Main fonction
  * @argc: input
  * @argv: input
- * 
+ *
  * Return: 0
  */
 int main(int argc, char *argv[])

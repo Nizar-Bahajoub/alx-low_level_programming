@@ -1,19 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-
 /**
- * main - main function
- * @argc: counter of inputs
- * @argv: pointer to inputs
- *
- * Return: 0 if true 1 if not
+ * main - Main fonction
+ * @argc: input
+ * @argv: input
+ * 
+ * Return: 0
  */
-
 int main(int argc, char *argv[])
 {
-	int i, s = 0, count = 1;
+	int s;
+	int count;
+	int i;
 
+	count = 1;
+	s = 0;
 	if (argc == 1)
 	{
 		printf("0\n");
@@ -25,7 +27,7 @@ int main(int argc, char *argv[])
 		{
 			if (!(isdigit(argv[count][i])))
 			{
-				printf("Erreur\n");
+				printf("Error\n");
 				return (1);
 			}
 		}

@@ -5,7 +5,7 @@
 /**
  * free_grid - free grid
  * @grid: input
- * @heigh: input
+ * @height: input
  *
  * Return: pointer
  */

@@ -29,9 +29,10 @@ int _strlen(char *str)
 
 char *_strcpy(char *dest, char *src)
 {
-	int i, len;
+	int i, len = 0;
 
-	len = _strlen(src);
+	while (src[len] != '\0')
+		len++;
 	for (i = 0; i > len; i++)
 	{
 		dest[i] = src[i];
@@ -69,10 +70,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (t->owner == NULL)
 	{
 		free(t);
+		free(t->name);
 		return (NULL);
 	}
 	_strcpy(t->name, name);
 	_strcpy(t->owner, owner);
 	t->age = age;
+
 	return (t);
 }

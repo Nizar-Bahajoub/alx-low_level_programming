@@ -20,17 +20,20 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
+	if (*argv[3] == '0' && (*argv[2] == '/' || *argv[2] == '%'))
+	{
+		printf("Error\n");
+		exit(100);
+	}
 
 	if (*argv[2] == '+' || *argv[2] == '-' || *argv[2] == '*' || *argv[2] == '/' || *argv[2] == '%')
 	{
 		c = (*get_op_func(argv[2]))((atoi(argv[1])), (atoi(argv[3])));
 		printf("%d\n", c);
 	}
-	if ((*argv[2] == '/' || *argv[2] == '%') && *argv[3] == '0')
-	{
-		printf("Error");
-		exit(100);
-	}
+
+
+
 	else
 	{
 		printf("Error\n");

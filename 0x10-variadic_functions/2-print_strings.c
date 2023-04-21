@@ -4,7 +4,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_string - prints string
+ * print_strings - prints string
  * @separator: input
  * @n: number of arguments
  *

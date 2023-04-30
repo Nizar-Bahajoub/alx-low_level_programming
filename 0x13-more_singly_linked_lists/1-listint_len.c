@@ -12,13 +12,12 @@
 size_t listint_len(const listint_t *h)
 {
 	int c = 0;
-	const listint_t *p = h;
 
-	if (p == 0)
+	if (h == 0)
 		return (0);
-	while (p != NULL)
+	while (h != NULL)
 	{
-		p = p->next;
+		h = h->next;
 		c++;
 	}
 	return (c);

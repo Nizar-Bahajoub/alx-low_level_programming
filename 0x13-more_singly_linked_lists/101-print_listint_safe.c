@@ -15,7 +15,7 @@ size_t print_listint_safe(const listint_t *head)
 	int c = 0;
 	unsigned long int i;
 	const listint_t *p;
-	const listint_t *t[SIZE] = {NULL};
+	const listint_t *t[SIZE];
 
 	if (head)
 	{
@@ -27,6 +27,7 @@ size_t print_listint_safe(const listint_t *head)
 			if (t[i] == p)
 			{
 				printf("-> [%p] %d\n", (void *)p, p->n);
+				c--;
 				break;
 			}
 			printf("[%p] %d\n", (void *)p, p->n);

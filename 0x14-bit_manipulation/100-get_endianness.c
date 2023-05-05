@@ -12,5 +12,5 @@ int get_endianness(void)
 {
 	unsigned int i = 1;
 	char *p = (char *)&n;
-       	return (*p == 1);
+	return (int)*p;
 }

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stidio.h>
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -7,7 +7,7 @@
 /**
  * create_file - creates a file
  * @filename: file name
- * @string to be writed to the file
+ * @text_content: string to be writed to the file
  *
  * Return: 1 on success, -1 on failure
  */

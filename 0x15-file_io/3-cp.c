@@ -50,6 +50,7 @@ int main(int argc, char **argv)
 			close(f2);
 			exit(99);
 		}
+		num_re = read(f1, buf, BUFFER_SIZE);
 	}
 
 	if (num_re == -1)

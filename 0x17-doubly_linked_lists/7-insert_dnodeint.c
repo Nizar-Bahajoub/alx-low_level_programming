@@ -9,7 +9,7 @@
  * @idx: the index of the node
  * @n: the value of the node
  *
- * Retrun: the address of the new node
+ * Return: the address of the new node
  */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)

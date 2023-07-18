@@ -199,7 +199,6 @@ void shash_table_print_rev(const shash_table_t *ht)
 void shash_table_delete(shash_table_t *ht)
 {
 	shash_node_t *current, *temp;
-	shash_node_t *head = ht;
 
 	if (ht == NULL)
 		return;
@@ -213,6 +212,6 @@ void shash_table_delete(shash_table_t *ht)
 		free(current);
 		current = temp;
 	}
-	free(head->array);
-	free(head);
+	free(ht->array);
+	free(ht);
 }
